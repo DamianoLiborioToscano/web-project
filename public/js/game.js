@@ -42,15 +42,23 @@ function initChat(gameId) {
     });
 
     //Send new message
-    sendMessageButton.addEventListener('click', () => {
+    sendMessageButton.addEventListener('click', sendMessage);
+    chatInput.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            sendMessage();
+        }
+    });
+    function sendMessage() {
         const username = localStorage.getItem('username');
         const message = chatInput.value.trim();
         if (message) {
             socket.emit('sendMessage', { gameId, sender: username, message });
-            chatInput.value = '';
-            chatMessages.scrollTop = chatMessages.scrollHeight;
+            chatInput.value = ''; 
+            chatMessages.scrollTop = chatMessages.scrollHeight; 
         }
-    });
+    }
+    
 
     //Format Message
     function getMessageHtml(message) {

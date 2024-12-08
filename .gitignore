@@ -1,0 +1,8 @@
+# node.js dependencies
+node_modules/
+
+# environment files
+.env
+
+# google key
+config/

@@ -21,7 +21,7 @@ Follow these steps to install the project.
     cd myBacklog
     ```
 
-2. Download the **Google Cloud JSON key file** and create a **Bucket**:
+2. Download the **Google Cloud JSON key file** (place it in a `config` folder in the project directory) and create a **Bucket** for the images.
 
 3. Obtain your connection string from **MongoDB**:
    - The key should look something like this:

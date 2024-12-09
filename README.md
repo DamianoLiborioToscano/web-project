@@ -37,13 +37,13 @@ Follow these steps to install the project.
      mongodb+srv://username:password@cluster0.mongodb.net/
      ```
 
-4. Create a `.env` file with the necessary parameters and place it in the project directory. The required parameters are:
+4. Create a `.env` file with the necessary parameters (replace with your credentials) and place it in the project directory. The required parameters are:
 
     ```env
     GOOGLE_APPLICATION_CREDENTIALS= ./config/your-JSON-key-file
     GCS_BUCKET_NAME= your-bucket-name
-    JWT_SECRET= your-secret
     DB_CONNECTION_STRING= your-mongodb-connection-string
+    JWT_SECRET= "8fbb5e8d43c9a7b17b99c2c6d4e4c8d7f9e394b3d3e8b1f2a87e5d0b6f3f9a77"
     PORT = 8888
     ```
 

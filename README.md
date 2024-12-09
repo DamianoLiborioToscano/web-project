@@ -1,6 +1,6 @@
-# myBacklog
+# GameTracker
 
-myBacklog is a web application designed to help you keep track of the games you've played and the games you want to play. It also includes a chat feature to discuss games with others.
+GameTracker is a web application designed to help you keep track of the games you've played and the ones you want to play. It also includes a chat feature to discuss games with others.
 
 ## Installation
 
@@ -17,8 +17,8 @@ Follow these steps to install the project.
 1. Clone the repository and navigate to the project directory:
 
     ```sh
-    git clone https://github.com/UniCT-WebDevelopment/myBacklog.git
-    cd myBacklog
+    git clone https://github.com/UniCT-WebDevelopment/GameTracker.git
+    cd GameTracker
     ```
 
 2. Download the **Google Cloud JSON key file** (place it in a `config` folder in the project directory) and create a **Bucket** for the images.

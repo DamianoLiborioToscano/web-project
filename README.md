@@ -8,7 +8,9 @@ Follow these steps to install the project.
 
 ### Prerequisites
 
-- Node.js and npm
+- **Node.js** and **npm**: For running the application.
+- **MongoDB Atlas Account**: For database hosting. You'll need to create a MongoDB Atlas account and set up a cluster. For more info, visit [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+- **Google Cloud Account**: You'll need to create a Google Cloud project and enable Google Cloud Storage. Visit [Google Cloud Console](https://console.cloud.google.com/) for more details.
 
 ### Steps
 
@@ -19,20 +21,10 @@ Follow these steps to install the project.
     cd myBacklog
     ```
 
-2. Create a Google Cloud service account key:
-   - Go to the [Google Cloud Console](https://console.cloud.google.com/).
-   - Navigate to **IAM & Admin** > **Service Accounts**.
-   - Click **Create Service Account**.
-   - Follow the prompts to create a new service account.
-   - Download the JSON key file and place it in a `config` folder within the project directory.
-   - Create a **Bucket**.
+2. Download the **Google Cloud JSON key file** and create a **Bucket**:
 
-3. Create a MongoDB Atlas cluster:
-   - Go to the [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) website.
-   - Sign in or create a new account.
-   - Click **Build a Cluster**.
-   - Go to the **Network Access** tab and add your IP address or allow access from anywhere.
-   - Obtain your connection string from the **Clusters** view. It should look something like this:
+3. Obtain your connection string from **MongoDB**:
+   - The key should look something like this:
      ```text
      mongodb+srv://username:password@cluster0.mongodb.net/
      ```
